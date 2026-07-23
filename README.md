@@ -20,7 +20,7 @@ uninstall:
 
 # faq
 
-### are you actually injecting a random .so into my kimi binary?
+### are you injecting a random .so into my kimi binary?
 
 yes.
 
