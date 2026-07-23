@@ -28,4 +28,8 @@ yes.
 
 yes.
 
+### should i actually use this?
+
+yes.
+
 > inspired by [this post](https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing) 
