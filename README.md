@@ -24,7 +24,7 @@ uninstall:
 
 yes.
 
-### did you coerce kimi to shit out this code?
+### did you coerce kimi into shitting out this code?
 
 yes.
 
