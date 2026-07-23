@@ -10,6 +10,7 @@ KIMI_BIN  := $(HOME)/.kimi-code/bin/kimi
 KIMI_ORIG := $(KIMI_BIN).orig
 LIB       := textswap.so
 SRC       := textswap.c
+CONF      := replacements.txt
 
 .PHONY: all install uninstall clean
 
@@ -20,6 +21,10 @@ $(LIB): $(SRC)
 	mv $@.tmp $@
 
 install: $(LIB)
+	@if [ ! -f $(CONF) ]; then \
+		printf 'moonshot => assbullet\n' > $(CONF); \
+		echo "created default $(CONF)"; \
+	fi
 	@if [ ! -f $(KIMI_ORIG) ]; then cp $(KIMI_BIN) $(KIMI_ORIG); fi
 	@if readelf -d $(KIMI_BIN) | grep -q 'textswap\.so'; then \
 		echo "already injected"; \
